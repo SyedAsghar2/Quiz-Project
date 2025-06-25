@@ -9,7 +9,6 @@ body{
 
 .quiz-container{
     background-color:white;
-    height: 300px;
     width: 500px;
     border-radius: 10px;
     right: 0px;
@@ -58,6 +57,7 @@ body{
 
 .quiz-container .question-container .submit-container {
     margin-left:20px;
+    margin-bottom: 10px;
 }
 
 .quiz-container .question-container .submit {
