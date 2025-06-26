@@ -14,28 +14,27 @@
     <div class="quiz-title">Quiz App</div>
     <div class="question-num">20 questions</div>
 
-    <form>
       <div class="question-container">
         <div class="question">Question 1</div>
         <div class="choices">
           <div class="c1">
-            <input type="radio" id="Choice1" value />
-            <label for="Choice1">choice1</label>
+            <input type="radio" id="1" value="choice1" name="questionChoices" />
+            <label for="choice1" class="choice1">choice1</label>
           </div>
 
           <div class="c2">
-            <input type="radio" id="Choice2" value />
-            <label for="Choice2">choice2</label>
+            <input type="radio" id="2" value="choice2" name="questionChoices"/>
+            <label for="choice2" class="choice2">choice2</label>
           </div>
 
           <div class="c3">
-            <input type="radio" id="Choice2" value />
-            <label for="Choice2">choice2</label>
+            <input type="radio" id="3" value="choice3" name="questionChoices"/>
+            <label for="choice3" class="choice3">choice3</label>
           </div>
 
           <div class="c4">
-            <input type="radio" id="Choice3" value />
-            <label for="Choice3">choice3</label>
+            <input type="radio" id="4" value="choice4" name="questionChoices"/>
+            <label for="choice4" class="choice4">choice4</label>
           </div>
         </div>
 
@@ -43,10 +42,11 @@
           <button class="submit" type="submit">Submit</button>
         </div>
       </div>
-    </form>
+
 
   </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="index.js"></script>
 </body>
 
 </html>
