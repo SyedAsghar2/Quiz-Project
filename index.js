@@ -50,17 +50,4 @@ function SetQuestion(){
 }
 }
 
-SetQuestion();
 
-document.querySelector(".submit").addEventListener("click", function(){
-    const answerPicked = document.querySelector('input[type="radio"]:checked');
-
-    if (answerPicked == null){
-        alert("Please choose an answer choice before clicking next.")
-    }
-    else{
-    console.log(answerPicked.id)
-    answerSubmitted.push(answerPicked.id)
-    questionNum += 1;
-    SetQuestion()}
-})
