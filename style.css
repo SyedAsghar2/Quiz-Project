@@ -79,3 +79,16 @@ input[type="radio"]{
 .quiz-container .question-container .submit:hover {
 background-color: rgb(0, 0, 156);
 }
+
+.correct {
+    background-color: #9aed94;
+    transition: background-color 0.4s ease;
+  }
+
+
+.wrong {
+    background-color: #e27474;
+    transition: background-color 0.4s ease;
+  }
+
+  
