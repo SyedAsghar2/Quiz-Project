@@ -12,10 +12,6 @@ answerSubmitted = []
             
 let questionNum = 0
 
-    
-
-
-
 
 function calculatedScore() {
     score = 0
