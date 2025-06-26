@@ -12,6 +12,10 @@ allAnswer = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 answerSubmitted = []
             
 
+    
+
+
+
 
 function calculatedScore() {
     score = 0
