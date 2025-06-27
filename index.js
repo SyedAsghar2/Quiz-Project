@@ -32,6 +32,11 @@ document.querySelector(".submit").disabled = true;
 
 
 function SetQuestion(){
+
+document.querySelectorAll(".choices label").forEach(label => {
+label.classList.remove("correct", "wrong");
+});
+      
 if (quesSelect.length != 0){
 randomIndex = Math.floor(Math.random() * quesSelect.length);
 questionNum = quesSelect[randomIndex];
@@ -56,19 +61,39 @@ if (quesSelect.length == 0){
 
 SetQuestion();
 
-document.querySelector(".submit").addEventListener("click", function(){
-const answerPicked = document.querySelector('input[type="radio"]:checked');
-
-if (answerPicked == null){
-alert("Please choose an answer choice before clicking next.")
-}
-else {
+document.querySelector(".submit").addEventListener("click", function () {
+    const answerPicked = document.querySelector('input[type="radio"]:checked');
+  
+    if (answerPicked == null) {
+      alert("Please choose an answer choice before clicking next.");
+      return;
+    }
+  
     console.log(answerPicked.id);
-    answerSubmitted.push(answerPicked.id);
+    answerSubmitted.push(parseInt(answerPicked.id));
 
+  
+   
+    document.querySelectorAll(".choices label").forEach(label => {
+      label.classList.remove("correct", "wrong");
+    });
+  
     const pickedId = answerPicked.id;
     const correctId = allAnswer[questionNum].toString();
-
-
-    
-
+  
+    const selectedLabel = document.querySelector(`label.choice${pickedId}`);
+  
+    if (parseInt(pickedId) === parseInt(correctId))
+    {
+      selectedLabel.classList.add("correct");
+    } else {
+      selectedLabel.classList.add("wrong");
+      const correctLabel = document.querySelector(`label.choice${correctId}`);
+      correctLabel.classList.add("correct");
+    }
+  
+    setTimeout(() => {
+      SetQuestion();
+    }, 1000);
+  });
+  
