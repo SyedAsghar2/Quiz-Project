@@ -24,12 +24,12 @@ return score;
 }
 
 
-function finalResult () {
-$('.c4').after('<div class= "score">inincr</div>')
-document.querySelector(".score").innerHTML = "Final score: " + calculatedScore() + "/20"
-document.querySelector(".submit").disabled = true;
-document.querySelector(".restart-container").style.display = "block";
+function finalResult() {
+  document.querySelector(".quiz-container").style.display = "none";
+  document.querySelector(".results-container").style.display = "flex";
+  document.querySelector(".score-text").innerHTML = "Your final score is " + calculatedScore() + "/19";
 }
+
 
 
 function SetQuestion(){
@@ -98,22 +98,25 @@ document.querySelector(".submit").addEventListener("click", function () {
         } else {
           finalResult();
         }
-      }, 1000);
+      }, 500);
 
     });
       
 
-  document.querySelector(".restart").addEventListener("click", function () {
+  document.querySelectorAll(".restart").forEach(btn => {
+  btn.addEventListener("click", function () {
     quesSelect.length = 0;
     for (let i = 0; i < 20; i++) quesSelect.push(i);
-  
+
     answerSubmitted.length = 0;
-    document.querySelector(".score").remove();
-  
+    document.querySelector(".quiz-container").style.display = "flex";
+    document.querySelector(".results-container").style.display = "none";
+
     document.querySelector(".submit").disabled = false;
-    document.querySelector(".restart-container").style.display = "none";
-  
+
     SetQuestion();
   });
+});
+
   
   
