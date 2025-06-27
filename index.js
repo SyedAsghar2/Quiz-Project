@@ -89,7 +89,6 @@ document.querySelector(".submit").addEventListener("click", function () {
     } else {
       selectedLabel.classList.add("wrong");
       const correctLabel = document.querySelector(`label.choice${correctId}`);
-      correctLabel.classList.add("correct");
     }
   
     setTimeout(() => {
