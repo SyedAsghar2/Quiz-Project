@@ -28,6 +28,7 @@ function finalResult () {
 $('.c4').after('<div class= "score">inincr</div>')
 document.querySelector(".score").innerHTML = "Final score: " + calculatedScore() + "/20"
 document.querySelector(".submit").disabled = true;
+document.querySelector(".restart-container").style.display = "block";
 }
 
 
@@ -95,4 +96,18 @@ document.querySelector(".submit").addEventListener("click", function () {
       SetQuestion();
     }, 1000);
   });
+
+  document.querySelector(".restart").addEventListener("click", function () {
+    quesSelect.length = 0;
+    for (let i = 0; i < 20; i++) quesSelect.push(i);
+  
+    answerSubmitted.length = 0;
+    document.querySelector(".score").remove();
+  
+    document.querySelector(".submit").disabled = false;
+    document.querySelector(".restart-container").style.display = "none";
+  
+    SetQuestion();
+  });
+  
   
