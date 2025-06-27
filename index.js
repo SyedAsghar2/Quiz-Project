@@ -93,9 +93,15 @@ document.querySelector(".submit").addEventListener("click", function () {
     }
   
     setTimeout(() => {
-      SetQuestion();
-    }, 1000);
-  });
+        if (quesSelect.length > 0) {
+          SetQuestion();
+        } else {
+          finalResult();
+        }
+      }, 1000);
+
+    });
+      
 
   document.querySelector(".restart").addEventListener("click", function () {
     quesSelect.length = 0;
