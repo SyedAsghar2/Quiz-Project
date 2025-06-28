@@ -19,13 +19,26 @@ allQues = [
 "What is the freezing point of water in Celsius?",
 "Which language is most spoken worldwide?",
 "How many legs does a spider have?"]
-allChoice = [["1C1","1C2","1C3","1C4"],["2C1","2C2","2C3","2C4"],["3C1","3C2","3C3","3C4"],
-            ["4C1","4C2","4C3","4C4"],["5C1","5C2","5C3","5C4"],["6C1","6C2","6C3","6C4"],
-            ["7C1","7C2","7C3","7C4"],["8C1","8C2","8C3","8C4"],["9C1","9C2","9C3","9C4"],
-            ["10C1","10C2","10C3","10C4"],["11C1","11C2","11C3","11C4"],["12C1","12C2","12C3","12C4"],
-            ["13C1","13C2","13C3","13C4"],["14C1","14C2","14C3","14C4"],["15C1","15C2","15C3","15C4"],
-            ["16C1","16C2","16C3","16C4"],["17C1","17C2","17C3","17C4"],["18C1","18C2","18C3","18C4"],
-            ["19C1","19C2","19C3","19C4"],["20C1","20C2","20C3","20C4"]]
+allChoice = [["London", "Paris", "Berlin", "Madrid"],
+["Earth", "Mars", "Jupiter", "Venus"],
+["William Wordsworth", "William Shakespeare", "Mark Twain", "Jane Austen"],
+["H2", "H2O", "O2", "CO2"],
+["Elephant", "Tiger", "Lion", "Giraffe"],
+["5", "6", "7", "8"],
+["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+["Cheetah", "Lion", "Horse", "Tiger"],
+["Atlantic", "Indian", "Arctic", "Pacific"],
+["Leonardo da Vinci", "Pablo Picasso", "Van Gogh", "Michelangelo"],
+["Elephant", "Blue Whale", "Giraffe", "Great White Shark"],
+["Japan", "USA", "Brazil", "China"],
+["6", "8", "10", "9"],
+["Abraham Lincoln", "George Washington", "John Adams", "Thomas Jefferson"],
+["Wax", "Honey", "Pollen", "Nectar"],
+["Mars", "Jupiter", "Saturn", "Uranus"],
+["K2", "Everest", "Makalu", "Kangchenjunga"],
+["0°C", "32°C", "100°C", "10°C"],
+["Spanish", "English", "Hindi", "Mandarin"],
+["6", "8", "10", "12"]]
 quesSelect = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
 allAnswer = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 answerSubmitted = []
