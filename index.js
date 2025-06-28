@@ -1,16 +1,51 @@
-const allQues = ["Q1","Q2","Q3","Q4","Q5","Q6","Q7","Q8","Q9","Q10",
-    "Q11","Q12", "Q13","Q14","Q15","Q16","Q17","Q18","Q19", "Q20"]
-const allChoice = [["1C1","1C2","1C3","1C4"],["2C1","2C2","2C3","2C4"],["3C1","3C2","3C3","3C4"],
-    ["4C1","4C2","4C3","4C4"],["5C1","5C2","5C3","5C4"],["6C1","6C2","6C3","6C4"],
-    ["7C1","7C2","7C3","7C4"],["8C1","8C2","8C3","8C4"],["9C1","9C2","9C3","9C4"],
-    ["10C1","10C2","10C3","10C4"],["11C1","11C2","11C3","11C4"],["12C1","12C2","12C3","12C4"],
-    ["13C1","13C2","13C3","13C4"],["14C1","14C2","14C3","14C4"],["15C1","15C2","15C3","15C4"],
-    ["16C1","16C2","16C3","16C4"],["17C1","17C2","17C3","17C4"],["18C1","18C2","18C3","18C4"],
-    ["19C1","19C2","19C3","19C4"],["20C1","20C2","20C3","20C4"]]
-const quesSelect = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
-const allAnswer = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+const allQues = [
+"What is the capital of France?",
+"Which planet is known as the Red Planet?",
+"Who wrote 'Romeo and Juliet'?",
+"What is the chemical symbol for water?",
+"Which animal is known as the King of the Jungle?",
+"How many continents are there on Earth?",
+"What gas do plants absorb from the atmosphere?",
+"What is the fastest land animal?",
+"Which ocean is the largest?",
+"Who painted the Mona Lisa?",
+"What is the largest mammal?",
+"Which country hosted the 2021 Olympics?",
+"What is the square root of 64?",
+"Who was the first President of the United States?",
+"What do bees produce?",
+"Which planet has rings around it?",
+"What is the tallest mountain in the world?",
+"What is the freezing point of water in Celsius?",
+"Which language is most spoken worldwide?",
+"How many legs does a spider have?"]
+
+const allChoice = [
+  ["Paris", "London", "Berlin", "Madrid"],
+  ["Mars", "Earth", "Jupiter", "Venus"],
+  ["William Shakespeare", "William Wordsworth", "Mark Twain", "Jane Austen"],
+  ["H2O", "H2", "O2", "CO2"],
+  ["Lion", "Elephant", "Tiger", "Giraffe"],
+  ["7", "5", "6", "8"],
+  ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+  ["Cheetah", "Lion", "Horse", "Tiger"],
+  ["Pacific", "Atlantic", "Indian", "Arctic"],
+  ["Leonardo da Vinci", "Pablo Picasso", "Van Gogh", "Michelangelo"],
+  ["Blue Whale", "Elephant", "Giraffe", "Great White Shark"],
+  ["Japan", "USA", "Brazil", "China"],
+  ["8", "6", "10", "9"],
+  ["George Washington", "Abraham Lincoln", "John Adams", "Thomas Jefferson"],
+  ["Honey", "Wax", "Pollen", "Nectar"],
+  ["Saturn", "Mars", "Jupiter", "Uranus"],
+  ["Everest", "K2", "Makalu", "Kangchenjunga"],
+  ["0°C", "32°C", "100°C", "10°C"],
+  ["Mandarin", "Spanish", "English", "Hindi"],
+  ["8", "6", "10", "12"]
+];
+
+const quesSelect = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+const allAnswer = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 answerSubmitted = []
-    
 
 
 function calculatedScore() {
